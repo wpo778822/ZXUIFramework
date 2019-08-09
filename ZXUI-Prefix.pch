@@ -1,0 +1,25 @@
+
+#define ZXUI_Prefix_pch
+
+#ifdef __OBJC__
+///**
+// *  引入公共框架
+// */
+//#import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
+//#import <AVFoundation/AVFoundation.h>
+//
+//
+///**
+// *  第三方框架
+// */
+//#import <Masonry.h>
+//#import "AFNetworking.h"
+//#import <YYWebImage/YYWebImage.h>
+//#import <MBProgressHUD.h>
+
+
+#pragma mark 外部类
+
+//#import "ZXHeader.h"
+#endif

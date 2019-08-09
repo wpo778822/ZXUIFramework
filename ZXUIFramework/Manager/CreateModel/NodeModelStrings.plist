@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dictionaryTypeString</key>
+	<string>    // [PropertyName]
+    if ([key isEqualToString:@&quot;[PropertyName]&quot;] &amp;&amp; [value isKindOfClass:[NSDictionary class]]) {
+        
+        value = [[[PropertyClass] alloc] initWithDictionary:value];
+    }
+</string>
+	<key>arrayTypeString</key>
+	<string>    // [PropertyName]
+    if ([key isEqualToString:@&quot;[PropertyName]&quot;] &amp;&amp; [value isKindOfClass:[NSArray class]]) {
+        
+        NSArray        *array     = value;
+        NSMutableArray *dataArray = [NSMutableArray array];
+        
+        for (NSDictionary *dictionary in array) {
+            
+            [PropertyClass] *model = [[[PropertyClass] alloc] initWithDictionary:dictionary];
+            [dataArray addObject:model];
+        }
+        
+        value = dataArray;
+    }
+</string>
+	<key>modelMFileString</key>
+	<string>//
+//  [ModelName-WaitForReplaced].m
+//  CreateModel
+//
+//  Created by 黄勤炜 on 2018/7/17.
+//  Copyright © 2018年 黄勤炜. All rights reserved.
+//
+
+
+#import &quot;[ModelName-WaitForReplaced].h&quot;
+
+@implementation [ModelName-WaitForReplaced]
+
+//YYmodel 替换属性名
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{   @"name"  : @"n",
+                @"page"  : @"p",
+                @"desc"  : @"ext.desc",
+                @"bookID": @[@"id", @"ID", @"book_id"]};
+}
+
+//YYmodel 嵌套model声明
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{   @"shadows" : [YYShadow class],
+                @"borders" : YYBorder.class,
+                @"attachments" : @"YYAttachment" };
+}
+
+//-----------------------不用YYmodel--------------------------//
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+    // 替换属性名
+    //  if([key isEqualToString:@&quot;id&quot;]) {
+    //      self.productID = value;
+    //      return;
+    //  }
+    
+    // 打印异常key
+    NSLog(@&quot;%@.h 异常key &apos;%@&apos;, the key&apos;s type is &apos;%@&apos;.&quot;, NSStringFromClass([self class]), key, [value class]);
+}
+
+- (void)setValue:(id)value forKey:(NSString *)key {
+    
+    // ignore null value
+    if ([value isKindOfClass:[NSNull class]]) {
+        return;
+    }
+[ListProperties-WaitForReplaced]
+    [super setValue:value forKey:key];
+}
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    if ([dictionary isKindOfClass:[NSDictionary class]]) {
+        if (self = [super init]) {
+            [self setValuesForKeysWithDictionary:dictionary];
+        }
+    }
+    return self;
+}
+
+@end
+
+</string>
+	<key>modelHeaderFileString</key>
+	<string>//
+//  [ModelName-WaitForReplaced].h
+//  CreateModel
+//
+//  Created by 黄勤炜 on 2018/7/17.
+//  Copyright © 2018年 黄勤炜. All rights reserved.
+//
+
+
+#import &lt;Foundation/Foundation.h&gt;
+[FileHeaders-WaitForReplaced]
+@interface [ModelName-WaitForReplaced] : NSObject
+
+[PropertiesList-WaitForReplaced]
+
+/**
+ *  初始化model
+ *
+ *  @param dictionary dictionary
+ *
+ *  @return model
+ */
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
+@end
+
+</string>
+</dict>
+</plist>
