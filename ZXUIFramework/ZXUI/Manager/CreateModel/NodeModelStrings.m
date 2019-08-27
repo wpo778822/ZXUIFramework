@@ -69,27 +69,27 @@
     for (PropertyInfomation *property in self.nodeModel.properties) {
         
         switch (property.propertyType) {
-                
+            case kNull:
             case kNSString: {
                 
-                NSString *tmpSting = [NSString stringWithFormat:@"@property (nonatomic, strong) NSString *%@;\n", property.propertyValue];
+                NSString *tmpSting = [NSString stringWithFormat:@"@property (nonatomic, copy) NSString *%@;\n", property.propertyValue];
                 propetiesString = [propetiesString stringByAppendingString:tmpSting];
                 
             } break;
                 
             case kNSNumber: {
                 
-                NSString *tmpSting = [NSString stringWithFormat:@"@property (nonatomic, strong) NSNumber *%@;\n", property.propertyValue];
+                NSString *tmpSting = [NSString stringWithFormat:@"@property (nonatomic, copy) NSNumber *%@;\n", property.propertyValue];
                 propetiesString = [propetiesString stringByAppendingString:tmpSting];
                 
             } break;
                 
-            case kNull: {
-                
-                NSString *tmpSting = [NSString stringWithFormat:@"// @property (nonatomic, strong) Null *%@;\n", property.propertyValue];
-                propetiesString = [propetiesString stringByAppendingString:tmpSting];
-                
-            } break;
+//            case kNull: {
+//                
+//                NSString *tmpSting = [NSString stringWithFormat:@"// @property (nonatomic, strong) Null *%@;\n", property.propertyValue];
+//                propetiesString = [propetiesString stringByAppendingString:tmpSting];
+//                
+//            } break;
                 
             case kNSDictionary: {
                 

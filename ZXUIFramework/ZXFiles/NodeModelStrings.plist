@@ -49,8 +49,8 @@
 
 //YYmodel 嵌套model声明
 + (NSDictionary *)modelContainerPropertyGenericClass {
-    return @{   @"shadows" : [YYShadow class],
-                @"borders" : YYBorder.class,
+    return @{   @"shadows" : [Self class],
+                @"borders" : Self.class,
                 @"attachments" : @"YYAttachment" };
 }
 
