@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZXUIFramework"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "组件库."
 
   # This description is used to generate tags and improve search results.
@@ -109,7 +109,7 @@ Pod::Spec.new do |spec|
 
    spec.resource_bundles = {
     'ZXResource' => ['ZXUIFramework/ZXResource.xcassets'],
-    'ZXFiles' => ['ZXUIFramework/ZXFiles'],
+    'ZXFiles' => ['ZXUIFramework/ZXFiles/*.plist'],
   }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"

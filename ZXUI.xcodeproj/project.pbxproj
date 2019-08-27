@@ -100,8 +100,8 @@
 		047AD3A822FCFAFC00951EBC /* ZXHUDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD34722FCFAFB00951EBC /* ZXHUDHelper.m */; };
 		047AD3A922FCFAFC00951EBC /* ZXViewControllerPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD34922FCFAFB00951EBC /* ZXViewControllerPicker.m */; };
 		047AD3AA22FCFAFC00951EBC /* ZXResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047AD34C22FCFAFB00951EBC /* ZXResource.xcassets */; };
-		048D28BD23150B0F000122FC /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 048D28BB23150B0F000122FC /* Contents.json */; };
 		048D28BE23150B0F000122FC /* ChinaCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048D28BC23150B0F000122FC /* ChinaCity.plist */; };
+		048D28C023150CF9000122FC /* NodeModelStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048D28BF23150CF9000122FC /* NodeModelStrings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -293,8 +293,8 @@
 		047AD34A22FCFAFB00951EBC /* ZXUtilHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXUtilHelper.h; sourceTree = "<group>"; };
 		047AD34B22FCFAFB00951EBC /* ZXControllerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXControllerHelper.h; sourceTree = "<group>"; };
 		047AD34C22FCFAFB00951EBC /* ZXResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ZXResource.xcassets; sourceTree = "<group>"; };
-		048D28BB23150B0F000122FC /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		048D28BC23150B0F000122FC /* ChinaCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChinaCity.plist; sourceTree = "<group>"; };
+		048D28BF23150CF9000122FC /* NodeModelStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NodeModelStrings.plist; sourceTree = "<group>"; };
 		04A78FD0216DEFAC00544DD0 /* ZXUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZXUI-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		273306CE1407067170EA3258 /* libPods-ZXUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZXUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D61D72C4D8BB04A09513AE2 /* Pods-ZXUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXUI/Pods-ZXUI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -960,8 +960,8 @@
 		048D28BA23150AEA000122FC /* ZXFiles */ = {
 			isa = PBXGroup;
 			children = (
+				048D28BF23150CF9000122FC /* NodeModelStrings.plist */,
 				048D28BC23150B0F000122FC /* ChinaCity.plist */,
-				048D28BB23150B0F000122FC /* Contents.json */,
 			);
 			path = ZXFiles;
 			sourceTree = "<group>";
@@ -1045,7 +1045,6 @@
 			files = (
 				047AD35B22FCFAFC00951EBC /* ZXPhotoCell.xib in Resources */,
 				044062ED216DEDD6004D4D8D /* LaunchScreen.storyboard in Resources */,
-				048D28BD23150B0F000122FC /* Contents.json in Resources */,
 				048D28BE23150B0F000122FC /* ChinaCity.plist in Resources */,
 				047AD35C22FCFAFC00951EBC /* ZXAlbumCell.xib in Resources */,
 				047AD35A22FCFAFC00951EBC /* ZXCameraCell.xib in Resources */,
@@ -1053,6 +1052,7 @@
 				047AD3AA22FCFAFC00951EBC /* ZXResource.xcassets in Resources */,
 				044062E8216DEDD5004D4D8D /* Main.storyboard in Resources */,
 				047AD35522FCFAFC00951EBC /* ZXSinglePhotoViewController.xib in Resources */,
+				048D28C023150CF9000122FC /* NodeModelStrings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
