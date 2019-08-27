@@ -21,7 +21,7 @@
 @implementation ZXartCityPickViewController
 - (NSDictionary *)areaListDict{
     if (!_areaListDict) {
-        _areaListDict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] pathForResource:@"ChinaCity.plist" ofType:nil]];
+        _areaListDict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXFiles.bundle"]] pathForResource:@"ChinaCity.plist" ofType:nil]];
     }
     return _areaListDict;
 }
