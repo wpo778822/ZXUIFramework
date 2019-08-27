@@ -17,11 +17,11 @@
 }
 
 - (instancetype)initWithTitle:(NSString *)title
-                         icon:(NSString *)iconName
+                        image:(UIImage *)image
                      actionBn:(NSString *)bnName
                        action:(Action)action{
     if (self = [super init]) {
-        _imageName            = iconName;
+        _placeholderImage     = image;
         _actionButtonName     = bnName;
         _placeholderString    = title;
         _bnBackgroundColor    = ZXBlueColor;
@@ -32,8 +32,7 @@
         _placeholderTextColor = [UIColor colorUsingRed:223 Green:223 Blue:223];;
         _action               = action;
         self.backgroundColor = [UIColor whiteColor];
-        UIImage *image = [UIImage imageNamed:_imageName];
-        _mainView             = [[UIImageView alloc] initWithImage:image];
+        _mainView             = [[UIImageView alloc] initWithImage:_placeholderImage];
         _mainView.contentMode = UIViewContentModeTop;
         [self addSubview: _mainView];
         
@@ -51,7 +50,6 @@
         [_infoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self);
             make.top.equalTo(mainView.mas_bottom).offset(35);
-//            make.bottom.equalTo(self);
         }];
         if (_actionButtonName){
             _actionBn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -74,20 +72,20 @@
 }
 
 + (instancetype)showCustomWithTitle:(NSString *)title
-                               icon:(NSString *)iconName
+                              image:(UIImage *)image
                            actionBn:(NSString *)bnName
                           action:(Action)action{
-    ZXPlaceholder *placeholder = [[ZXPlaceholder alloc] initWithTitle:title icon:iconName actionBn:bnName action:action];
+    ZXPlaceholder *placeholder = [[ZXPlaceholder alloc] initWithTitle:title image:image actionBn:bnName action:action];
     return placeholder;
 }
 
 + (instancetype)showFailWithAction:(Action)action{
-    ZXPlaceholder *placeholder = [[ZXPlaceholder alloc]initWithTitle:@"您的网络不稳定哦，请刷新重试~" icon:@"quesheng_wangluozhuangtai" actionBn:@"刷新" action:action];
+    ZXPlaceholder *placeholder = [[ZXPlaceholder alloc]initWithTitle:@"您的网络不稳定哦，请刷新重试~" image:[UIImage imageNamed:@"quesheng_wangluozhuangtai" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil] actionBn:@"刷新" action:action];
     return placeholder;
 }
 
 + (instancetype)showNodata{
-    ZXPlaceholder *placeholder = [[ZXPlaceholder alloc]initWithTitle:@"暂无数据" icon:@"quesheng_kongye" actionBn:nil action:nil];
+    ZXPlaceholder *placeholder = [[ZXPlaceholder alloc]initWithTitle:@"暂无数据" image:[UIImage imageNamed:@"quesheng_kongye" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil] actionBn:nil action:nil];
     return placeholder;
 }
 
@@ -102,12 +100,9 @@
     _infoLabel.text = placeholderString;
 }
 
-- (void)setImageName:(NSString *)imageName{
-    _imageName = imageName;
-    if(imageName){
-        UIImage *image = [UIImage imageNamed:imageName];
-        _mainView.image = image;
-    }
+- (void)setPlaceholderImage:(UIImage *)placeholderImage{
+    _placeholderImage = placeholderImage;
+    _mainView.image = _placeholderImage;
 }
 
 - (void)setActionButtonName:(NSString *)actionButtonName{

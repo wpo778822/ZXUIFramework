@@ -17,7 +17,6 @@
 		047AD34D22FCFAFC00951EBC /* ZXTabsScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD26522FCFAFB00951EBC /* ZXTabsScrollViewController.m */; };
 		047AD34E22FCFAFC00951EBC /* ZXSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD26822FCFAFB00951EBC /* ZXSlideMenu.m */; };
 		047AD34F22FCFAFC00951EBC /* UIViewController+ZXPhotoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD26A22FCFAFB00951EBC /* UIViewController+ZXPhotoHelper.m */; };
-		047AD35022FCFAFC00951EBC /* ZXPhotoPickerAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047AD26B22FCFAFB00951EBC /* ZXPhotoPickerAssets.xcassets */; };
 		047AD35122FCFAFC00951EBC /* ZXPhotoPickerTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD26C22FCFAFB00951EBC /* ZXPhotoPickerTheme.m */; };
 		047AD35222FCFAFC00951EBC /* ZXPhotoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD26E22FCFAFB00951EBC /* ZXPhotoNavigationController.m */; };
 		047AD35322FCFAFC00951EBC /* ZXSinglePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD26F22FCFAFB00951EBC /* ZXSinglePhotoViewController.m */; };
@@ -30,7 +29,6 @@
 		047AD35A22FCFAFC00951EBC /* ZXCameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047AD27D22FCFAFB00951EBC /* ZXCameraCell.xib */; };
 		047AD35B22FCFAFC00951EBC /* ZXPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047AD27F22FCFAFB00951EBC /* ZXPhotoCell.xib */; };
 		047AD35C22FCFAFC00951EBC /* ZXAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047AD28022FCFAFB00951EBC /* ZXAlbumCell.xib */; };
-		047AD35D22FCFAFC00951EBC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047AD28522FCFAFB00951EBC /* Media.xcassets */; };
 		047AD35E22FCFAFC00951EBC /* ZXLocationShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD28722FCFAFB00951EBC /* ZXLocationShowController.m */; };
 		047AD35F22FCFAFC00951EBC /* ZXWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD28922FCFAFB00951EBC /* ZXWebPageViewController.m */; };
 		047AD36022FCFAFC00951EBC /* ZXImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD28E22FCFAFB00951EBC /* ZXImageScrollView.m */; };
@@ -49,10 +47,6 @@
 		047AD36D22FCFAFC00951EBC /* ZXSuperVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2AA22FCFAFB00951EBC /* ZXSuperVC.m */; };
 		047AD36E22FCFAFC00951EBC /* UIView+ZXBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2AE22FCFAFB00951EBC /* UIView+ZXBadge.m */; };
 		047AD36F22FCFAFC00951EBC /* ZXAddImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2B222FCFAFB00951EBC /* ZXAddImageCell.m */; };
-		047AD37022FCFAFC00951EBC /* fadongtai_shantupian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2B422FCFAFB00951EBC /* fadongtai_shantupian@3x.png */; };
-		047AD37122FCFAFC00951EBC /* fabu_tianjiatupian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2B522FCFAFB00951EBC /* fabu_tianjiatupian@2x.png */; };
-		047AD37222FCFAFC00951EBC /* fabu_tianjiatupian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2B622FCFAFB00951EBC /* fabu_tianjiatupian@3x.png */; };
-		047AD37322FCFAFC00951EBC /* fadongtai_shantupian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2B722FCFAFB00951EBC /* fadongtai_shantupian@2x.png */; };
 		047AD37422FCFAFC00951EBC /* ZXScrollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2B922FCFAFB00951EBC /* ZXScrollLabelView.m */; };
 		047AD37522FCFAFC00951EBC /* UITextView+ZX.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2BD22FCFAFB00951EBC /* UITextView+ZX.m */; };
 		047AD37622FCFAFC00951EBC /* ZXTextViewBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2BF22FCFAFB00951EBC /* ZXTextViewBorder.m */; };
@@ -128,7 +122,6 @@
 		047AD26722FCFAFB00951EBC /* ZXSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSlideMenu.h; sourceTree = "<group>"; };
 		047AD26822FCFAFB00951EBC /* ZXSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSlideMenu.m; sourceTree = "<group>"; };
 		047AD26A22FCFAFB00951EBC /* UIViewController+ZXPhotoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZXPhotoHelper.m"; sourceTree = "<group>"; };
-		047AD26B22FCFAFB00951EBC /* ZXPhotoPickerAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ZXPhotoPickerAssets.xcassets; sourceTree = "<group>"; };
 		047AD26C22FCFAFB00951EBC /* ZXPhotoPickerTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPhotoPickerTheme.m; sourceTree = "<group>"; };
 		047AD26E22FCFAFB00951EBC /* ZXPhotoNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPhotoNavigationController.m; sourceTree = "<group>"; };
 		047AD26F22FCFAFB00951EBC /* ZXSinglePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSinglePhotoViewController.m; sourceTree = "<group>"; };
@@ -151,7 +144,6 @@
 		047AD28122FCFAFB00951EBC /* ZXAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXAlbumCell.h; sourceTree = "<group>"; };
 		047AD28222FCFAFB00951EBC /* ZXCameraCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCameraCell.h; sourceTree = "<group>"; };
 		047AD28322FCFAFB00951EBC /* ZXPhotoPickerTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPhotoPickerTheme.h; sourceTree = "<group>"; };
-		047AD28522FCFAFB00951EBC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		047AD28622FCFAFB00951EBC /* ZXLocationShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXLocationShowController.h; sourceTree = "<group>"; };
 		047AD28722FCFAFB00951EBC /* ZXLocationShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLocationShowController.m; sourceTree = "<group>"; };
 		047AD28922FCFAFB00951EBC /* ZXWebPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXWebPageViewController.m; sourceTree = "<group>"; };
@@ -189,10 +181,6 @@
 		047AD2B022FCFAFB00951EBC /* UIView+ZXBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXBadge.h"; sourceTree = "<group>"; };
 		047AD2B222FCFAFB00951EBC /* ZXAddImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXAddImageCell.m; sourceTree = "<group>"; };
 		047AD2B322FCFAFB00951EBC /* ZXAddImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXAddImageCell.h; sourceTree = "<group>"; };
-		047AD2B422FCFAFB00951EBC /* fadongtai_shantupian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fadongtai_shantupian@3x.png"; sourceTree = "<group>"; };
-		047AD2B522FCFAFB00951EBC /* fabu_tianjiatupian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fabu_tianjiatupian@2x.png"; sourceTree = "<group>"; };
-		047AD2B622FCFAFB00951EBC /* fabu_tianjiatupian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fabu_tianjiatupian@3x.png"; sourceTree = "<group>"; };
-		047AD2B722FCFAFB00951EBC /* fadongtai_shantupian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fadongtai_shantupian@2x.png"; sourceTree = "<group>"; };
 		047AD2B922FCFAFB00951EBC /* ZXScrollLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXScrollLabelView.m; sourceTree = "<group>"; };
 		047AD2BA22FCFAFB00951EBC /* ZXScrollLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXScrollLabelView.h; sourceTree = "<group>"; };
 		047AD2BC22FCFAFB00951EBC /* ZXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTextView.h; sourceTree = "<group>"; };
@@ -422,7 +410,6 @@
 			isa = PBXGroup;
 			children = (
 				047AD26A22FCFAFB00951EBC /* UIViewController+ZXPhotoHelper.m */,
-				047AD26B22FCFAFB00951EBC /* ZXPhotoPickerAssets.xcassets */,
 				047AD26C22FCFAFB00951EBC /* ZXPhotoPickerTheme.m */,
 				047AD26D22FCFAFB00951EBC /* Controller */,
 				047AD27722FCFAFB00951EBC /* UIViewController+ZXPhotoHelper.h */,
@@ -468,7 +455,6 @@
 		047AD28422FCFAFB00951EBC /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				047AD28522FCFAFB00951EBC /* Media.xcassets */,
 				047AD28622FCFAFB00951EBC /* ZXLocationShowController.h */,
 				047AD28722FCFAFB00951EBC /* ZXLocationShowController.m */,
 			);
@@ -536,14 +522,14 @@
 		047AD2A322FCFAFB00951EBC /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				047AD2A422FCFAFB00951EBC /* ZXSuperTableVC.m */,
-				047AD2A522FCFAFB00951EBC /* ZXSuperCollectionVC.h */,
-				047AD2A622FCFAFB00951EBC /* ZXSuperVC.h */,
+				047AD2AB22FCFAFB00951EBC /* ZXNavigationController.h */,
 				047AD2A722FCFAFB00951EBC /* ZXNavigationController.m */,
+				047AD2A522FCFAFB00951EBC /* ZXSuperCollectionVC.h */,
 				047AD2A822FCFAFB00951EBC /* ZXSuperCollectionVC.m */,
 				047AD2A922FCFAFB00951EBC /* ZXSuperTableVC.h */,
+				047AD2A422FCFAFB00951EBC /* ZXSuperTableVC.m */,
+				047AD2A622FCFAFB00951EBC /* ZXSuperVC.h */,
 				047AD2AA22FCFAFB00951EBC /* ZXSuperVC.m */,
-				047AD2AB22FCFAFB00951EBC /* ZXNavigationController.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -589,10 +575,6 @@
 			children = (
 				047AD2B222FCFAFB00951EBC /* ZXAddImageCell.m */,
 				047AD2B322FCFAFB00951EBC /* ZXAddImageCell.h */,
-				047AD2B422FCFAFB00951EBC /* fadongtai_shantupian@3x.png */,
-				047AD2B522FCFAFB00951EBC /* fabu_tianjiatupian@2x.png */,
-				047AD2B622FCFAFB00951EBC /* fabu_tianjiatupian@3x.png */,
-				047AD2B722FCFAFB00951EBC /* fadongtai_shantupian@2x.png */,
 			);
 			path = AddImageCell;
 			sourceTree = "<group>";
@@ -1045,20 +1027,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047AD37122FCFAFC00951EBC /* fabu_tianjiatupian@2x.png in Resources */,
 				047AD35B22FCFAFC00951EBC /* ZXPhotoCell.xib in Resources */,
 				044062ED216DEDD6004D4D8D /* LaunchScreen.storyboard in Resources */,
-				047AD35022FCFAFC00951EBC /* ZXPhotoPickerAssets.xcassets in Resources */,
 				047AD36922FCFAFC00951EBC /* ChinaCity.plist in Resources */,
-				047AD37022FCFAFC00951EBC /* fadongtai_shantupian@3x.png in Resources */,
 				047AD35C22FCFAFC00951EBC /* ZXAlbumCell.xib in Resources */,
 				047AD35A22FCFAFC00951EBC /* ZXCameraCell.xib in Resources */,
 				044062EA216DEDD6004D4D8D /* Assets.xcassets in Resources */,
 				047AD3AA22FCFAFC00951EBC /* ZXResource.xcassets in Resources */,
-				047AD37322FCFAFC00951EBC /* fadongtai_shantupian@2x.png in Resources */,
-				047AD37222FCFAFC00951EBC /* fabu_tianjiatupian@3x.png in Resources */,
 				044062E8216DEDD5004D4D8D /* Main.storyboard in Resources */,
-				047AD35D22FCFAFC00951EBC /* Media.xcassets in Resources */,
 				047AD35522FCFAFC00951EBC /* ZXSinglePhotoViewController.xib in Resources */,
 				047AD39F22FCFAFC00951EBC /* NodeModelStrings.plist in Resources */,
 			);

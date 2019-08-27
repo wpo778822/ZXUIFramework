@@ -152,15 +152,15 @@
     _search.delegate = self;
 
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftButton setImage:[UIImage imageNamed:@"barbuttonicon_back_cube"] forState:UIControlStateNormal];
+    [leftButton setImage:[self getImage:@"barbuttonicon_back_cube"] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
     [leftButton sizeToFit];
     leftButton.imageEdgeInsets = UIEdgeInsetsMake(0, -13, 0, 0);
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
 
     _locationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_locationBtn setBackgroundImage:[UIImage imageNamed:@"location_my"] forState:UIControlStateNormal];
-    [_locationBtn setBackgroundImage:[UIImage imageNamed:@"location_my_HL"] forState:UIControlStateHighlighted];
+    [_locationBtn setBackgroundImage:[self getImage:@"location_my"] forState:UIControlStateNormal];
+    [_locationBtn setBackgroundImage:[self getImage:@"location_my_HL"] forState:UIControlStateHighlighted];
     _locationBtn.tag = TAG_LOCATION_ME_FAR;
     [_locationBtn sizeToFit];
     CGRect frame;
@@ -177,8 +177,8 @@
     [self.view addSubview:locationView];
 
     UIButton *shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [shareBtn setBackgroundImage:[UIImage imageNamed:@"locationSharing_navigate_icon_new"] forState:UIControlStateNormal];
-    [shareBtn setBackgroundImage:[UIImage imageNamed:@"locationSharing_navigate_icon_HL_new"] forState:UIControlStateHighlighted];
+    [shareBtn setBackgroundImage:[self getImage:@"locationSharing_navigate_icon_new"] forState:UIControlStateNormal];
+    [shareBtn setBackgroundImage:[self getImage:@"locationSharing_navigate_icon_HL_new"] forState:UIControlStateHighlighted];
     [shareBtn addTarget:self  action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
     [shareBtn sizeToFit];
     frame = shareBtn.frame;
@@ -416,7 +416,7 @@
     NSInteger targetTag = isLocationMeNear ? TAG_LOCATION_ME_NEAR : TAG_LOCATION_ME_FAR;
     if (_locationBtn.tag != targetTag) {
         NSString *backgroundImageString =  isLocationMeNear ? @"location_my_current": @"location_my";
-        [_locationBtn setBackgroundImage:[UIImage imageNamed:backgroundImageString] forState:UIControlStateNormal];
+        [_locationBtn setBackgroundImage:[self getImage:backgroundImageString] forState:UIControlStateNormal];
     }
 
 }
@@ -460,12 +460,12 @@
         if ([view.annotation isKindOfClass:[MAUserLocation class]]){
             MAUserLocationRepresentation *pre = [[MAUserLocationRepresentation alloc] init];
             pre.fillColor = [UIColor colorWithRed:30/255.0 green:130/255.0 blue:233/255.0 alpha:0.3];
-            pre.image = [UIImage imageNamed:@"locationSharing_Icon_MySelf"];
+            pre.image = [self getImage:@"locationSharing_Icon_MySelf"];
             pre.lineWidth = 0;
             pre.showsAccuracyRing = YES;
             pre.showsHeadingIndicator = YES;
 
-            UIImage *indicator = [UIImage imageNamed:@"locationSharing_Icon_Myself_Heading"];
+            UIImage *indicator = [self getImage:@"locationSharing_Icon_Myself_Heading"];
             UIImageView *headingView = [[UIImageView alloc] initWithImage:indicator];
             [headingView sizeToFit];
             CGRect frame = headingView.frame;
@@ -494,4 +494,7 @@
     }
 }
 
+- (UIImage *)getImage:(NSString *)imageName{
+   return [UIImage imageNamed:imageName inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil];
+}
 @end

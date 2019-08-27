@@ -171,7 +171,7 @@ static NSInteger const kCellTag = 1000;
             imageView.clipsToBounds = YES;
             [cell addSubview:imageView];
         }
-        imageView.image = [UIImage imageNamed:@"fabu_tianjiatupian"];
+        imageView.image = [UIImage imageNamed:@"fabu_tianjiatupian" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil];
         return cell;
     }else {
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cellImage" forIndexPath:indexPath];
@@ -186,7 +186,7 @@ static NSInteger const kCellTag = 1000;
             if (_isReturning) {
                 UIButton *deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
                 deleteBtn.frame = CGRectMake(_itemWidth - SCALE_SET(5 + 15), SCALE_SET(5), SCALE_SET(15), SCALE_SET(15));
-                [deleteBtn setImage:[UIImage imageNamed:@"fadongtai_shantupian"] forState:UIControlStateNormal];
+                [deleteBtn setImage:[UIImage imageNamed:@"fadongtai_shantupian" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
                 deleteBtn.tag = 222;
                 [deleteBtn addTarget:self action:@selector(deleteImage:) forControlEvents:UIControlEventTouchUpInside];
                 [cell addSubview:deleteBtn];

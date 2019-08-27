@@ -161,7 +161,7 @@ static const CGFloat kDamping = 0.5f;
 static const CGFloat kInitialVelocity = 0.0f;
 static const NSUInteger kAnimationOptions = 7 << 16;
 
-#pragma mark init 
+#pragma mark init
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -238,7 +238,7 @@ static const NSUInteger kAnimationOptions = 7 << 16;
             }
         }
     }
-
+    
     NSInteger index = [self.textFields indexOfObject:textField];
     if (textField.text.length == [self.dataSource numberOfCharactersInSection:index inTextField:self]) {
         if (index < self.textFields.count - 1) {
@@ -415,6 +415,7 @@ static const NSUInteger kAnimationOptions = 7 << 16;
         for (UITextField *currentTexField in self.textFields) {
             currentTexField.layer.borderColor = self.upperBorderColor.CGColor;
             currentTexField.transform = CGAffineTransformIdentity;
+            currentTexField.leftView.alpha = 1.f;
         }
     };
     
@@ -542,6 +543,7 @@ static const NSUInteger kAnimationOptions = 7 << 16;
 
 - (void)setLeftView:(UIView *)leftView{
     _leftView = leftView;
+    _leftView.alpha = 0.f;
     [self updateLeftView];
 }
 
@@ -811,8 +813,8 @@ static const NSUInteger kAnimationOptions = 7 << 16;
 #pragma mark 类实例化
 
 + (ZXInputField *)borderedFieldWithDataSource:(id<ZXFieldDataSource>)dataSource
-                                delegate:(id<ZXFieldDelegate>)delegate
-                                   block:(Complete)block{
+                                     delegate:(id<ZXFieldDelegate>)delegate
+                                        block:(Complete)block{
     ZXInputField *field = [[ZXInputField alloc]init];
     field.dataSource = dataSource;
     field.delegate = delegate;
@@ -822,8 +824,8 @@ static const NSUInteger kAnimationOptions = 7 << 16;
 }
 
 + (ZXInputField *)underlinedFieldWithDataSource:(id<ZXFieldDataSource>)dataSource
-                                  delegate:(id<ZXFieldDelegate>)delegate
-                                     block:(Complete)block{
+                                       delegate:(id<ZXFieldDelegate>)delegate
+                                          block:(Complete)block{
     ZXInputField *field = [[ZXInputField alloc]init];
     field.dataSource = dataSource;
     field.delegate = delegate;
@@ -835,9 +837,9 @@ static const NSUInteger kAnimationOptions = 7 << 16;
 }
 
 + (ZXInputField *)borderedFieldWithWithDataSource:(id<ZXFieldDataSource> )dataSource
-                                    delegate:(id<ZXFieldDelegate>)delegate
-                             placeholderText:(NSString *)placeholderText
-                                       block:(Complete)block{
+                                         delegate:(id<ZXFieldDelegate>)delegate
+                                  placeholderText:(NSString *)placeholderText
+                                            block:(Complete)block{
     ZXInputField *field = [[ZXInputField alloc]init];
     field.dataSource = dataSource;
     field.delegate = delegate;
@@ -848,12 +850,12 @@ static const NSUInteger kAnimationOptions = 7 << 16;
 }
 
 + (ZXInputField *)borderedFieldWithDataSource:(id<ZXFieldDataSource>)dataSource
-                                delegate:(id<ZXFieldDelegate>)delegate
-                         placeholderText:(NSString *)placeholderText
-                             borderWidth:(CGFloat)borderWidth
-                             borderColor:(UIColor *)borderColor
-                        upperBorderColor:(UIColor *)upperBorderColor
-                                   block:(Complete)block{
+                                     delegate:(id<ZXFieldDelegate>)delegate
+                              placeholderText:(NSString *)placeholderText
+                                  borderWidth:(CGFloat)borderWidth
+                                  borderColor:(UIColor *)borderColor
+                             upperBorderColor:(UIColor *)upperBorderColor
+                                        block:(Complete)block{
     ZXInputField *field = [[ZXInputField alloc]init];
     field.dataSource = dataSource;
     field.delegate = delegate;
@@ -867,10 +869,10 @@ static const NSUInteger kAnimationOptions = 7 << 16;
 }
 
 + (ZXInputField *)underlinedFieldWithDataSource:(id<ZXFieldDataSource>)dataSource
-                                  delegate:(id<ZXFieldDelegate>)delegate
-                         underliningHeight:(CGFloat)underliningHeight
-                          underliningColor:(UIColor *)underliningColor
-                                     block:(Complete)block{
+                                       delegate:(id<ZXFieldDelegate>)delegate
+                              underliningHeight:(CGFloat)underliningHeight
+                               underliningColor:(UIColor *)underliningColor
+                                          block:(Complete)block{
     ZXInputField *field = [[ZXInputField alloc]init];
     field.dataSource = dataSource;
     field.delegate = delegate;

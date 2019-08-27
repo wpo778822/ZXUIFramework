@@ -18,7 +18,7 @@
     [super viewDidLoad];
     ZXLog(@"[%@ viewDidLoad]", NSStringFromClass([self class]));
     if (self.navigationController && ![self.navigationController.childViewControllers.firstObject isEqual:self]) {
-        [self setBarButton:NO WithOriginalImage:@"tap_back" action:@selector(popBack)];
+        [self setBarButton:NO originalImage:[UIImage imageNamed:@"tap_back" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil] action:@selector(popBack)];
     }
 }
 
@@ -27,8 +27,8 @@
     self.navBarBgAlpha = @"1.0";
 }
 
-- (void)setBarButton:(BOOL)isRight WithOriginalImage:(NSString *_Nullable)name action:(nullable SEL)action {
-    UIImage *image = [[UIImage imageNamed:name] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+- (void)setBarButton:(BOOL)isRight originalImage:(UIImage *_Nullable)originalImage action:(nullable SEL)action {
+    UIImage *image = [originalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     if (isRight) {
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:action];
     }else {

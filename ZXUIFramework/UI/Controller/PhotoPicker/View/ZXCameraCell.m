@@ -23,7 +23,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.captureVeilView.backgroundColor = [ZXPhotoPickerTheme sharedInstance].cameraVeilColor;
-    self.cameraImageView.image = [self.cameraImageView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    self.cameraImageView.image = [[UIImage imageNamed:@"ZXIconCamera" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     self.cameraImageView.tintColor = [ZXPhotoPickerTheme sharedInstance].cameraIconColor;
 }
 

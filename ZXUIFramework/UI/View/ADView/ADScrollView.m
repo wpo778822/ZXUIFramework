@@ -25,7 +25,7 @@
     self = [super init];
     if (self) {
         self.userInteractionEnabled = YES;
-        self.placeHolderImageName = @"banner_chongxinjiazai";
+        self.placeHolderImage = [UIImage imageNamed:@"banner_chongxinjiazai" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil];
         _isNormalPageControl = YES;
         [self configureViews];
         [self configureImageViews];
@@ -161,13 +161,13 @@
     rightIndex = (_currentIndex + 1) % _totalADCounts;
     
     if ([self.ADArray[leftIndex] isKindOfClass:[NSString class]] && ![self.ADArray[leftIndex] hasPrefix:@"http"]) {
-        _leftImageView.image = [UIImage imageNamed:self.ADArray[leftIndex]];
+        _leftImageView.image = self.ADArray[leftIndex];
     }else{
         [_leftImageView yy_setImageWithURL:self.ADArray[leftIndex] placeholder:_placeHolderImgae];
     }
 
     if ([self.ADArray[_currentIndex] isKindOfClass:[NSString class]] && ![self.ADArray[_currentIndex] hasPrefix:@"http"]) {
-        _centerImageView.image = [UIImage imageNamed:self.ADArray[_currentIndex]];
+        _centerImageView.image = self.ADArray[_currentIndex];
     }else{
         __weak __typeof(&*self)weakSelf = self;
         [_centerImageView yy_setImageWithURL:self.ADArray[_currentIndex] placeholder:_placeHolderImgae options:YYWebImageOptionSetImageWithFadeAnimation progress:^(NSInteger receivedSize, NSInteger expectedSize) {
@@ -181,7 +181,7 @@
         }];
     }
     if ([self.ADArray[rightIndex] isKindOfClass:[NSString class]] && ![self.ADArray[rightIndex] hasPrefix:@"http"]) {
-        _rightImageView.image = [UIImage imageNamed:self.ADArray[rightIndex]];
+        _rightImageView.image = self.ADArray[rightIndex];
     }else{
         [_rightImageView yy_setImageWithURL:self.ADArray[rightIndex] placeholder:_placeHolderImgae];
     }
@@ -224,14 +224,14 @@
 - (void)configureAdsArray {
     NSInteger ADcounts = _ADArray.count;
     if (ADcounts == 0) {
-        _ADArray = [NSArray arrayWithObjects:_placeHolderImageName,_placeHolderImageName,_placeHolderImageName, nil];
+        _ADArray = [NSArray arrayWithObjects:_placeHolderImage,_placeHolderImage,_placeHolderImage, nil];
         self.totalADCounts = 3;
     }
     if (ADcounts == 1) {
         self.isShowPageControl = NO;
     }
     else {
-        self.placeHolderImageName = @"banner_nodata";
+        self.placeHolderImage = [UIImage imageNamed:@"banner_nodata" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil];
         _scrollView.scrollEnabled = YES;
         self.totalADCounts = ADcounts;
         self.isShowPageControl = YES;
@@ -355,9 +355,8 @@
     return _progressLayer;
 }
 
--(void)setPlaceHolderImageName:(NSString *)placeHolderImageName{
-    _placeHolderImageName = placeHolderImageName;
-    self.placeHolderImgae = [UIImage imageNamed:placeHolderImageName];
+- (void)setPlaceHolderImage:(UIImage *)placeHolderImage{
+    _placeHolderImage = placeHolderImage;
 }
 - (void)setIsShowPageControl:(BOOL)isShowPageControl{
     _isShowPageControl = isShowPageControl;

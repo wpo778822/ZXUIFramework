@@ -359,7 +359,7 @@ static const CGFloat ZXPhotoFetchScaleResizingRatio = 0.75;
     albumButton.titleLabel.font = self.theme.titleLabelFont;
     [albumButton addTarget:self action:@selector(presentAlbumPickerView:) forControlEvents:UIControlEventTouchUpInside];
     [albumButton setTitle:photoCollection.localizedTitle forState:UIControlStateNormal];
-    UIImage *arrowDownImage = [UIImage imageNamed:@"ZXIconSpinnerDropdwon" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil];
+    UIImage *arrowDownImage = [UIImage imageNamed:@"ZXIconSpinnerDropdwon" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil];
     arrowDownImage = [arrowDownImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [albumButton setImage:arrowDownImage forState:UIControlStateNormal];
     [albumButton sizeToFit];

@@ -540,9 +540,7 @@ static NSString * const ZXPopupMenuCelldentifier             = @"ZXPopupMenuCell
     cell.isShowSeparator = (indexPath.row + 1) == dataArray.count || (indexPath.row + 1) == _maxVisibleCount ? NO : _isShowSeparator;
     cell.separatorColor  = _separatorColor;
     if (_images.count >= indexPath.row + 1) {
-        if ([_images[indexPath.row] isKindOfClass:[NSString class]]) {
-            cell.leftImageView.image = [UIImage imageNamed:_images[indexPath.row]];
-        }else if ([_images[indexPath.row] isKindOfClass:[UIImage class]]){
+         if ([_images[indexPath.row] isKindOfClass:[UIImage class]]){
             cell.leftImageView.image = _images[indexPath.row];
         }else {
             [cell.marqueeLabel mas_updateConstraints:^(MASConstraintMaker *make) {

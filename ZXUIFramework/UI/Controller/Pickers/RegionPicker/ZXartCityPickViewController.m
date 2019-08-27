@@ -79,7 +79,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setBarButton:NO WithOriginalImage:_selectedCityArray.count == 0 ? @"cha_black" : @"cha_black"  action:@selector(cancel)];
+    [self setBarButton:NO originalImage:[UIImage imageNamed:_selectedCityArray.count == 0 ? @"cha_black" : @"cha_black" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil]  action:@selector(cancel)];
     [self.navigationItem.rightBarButtonItem setTintColor:[UIColor grayColor]];
     [self.navigationItem.rightBarButtonItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:UIFontWithSize(16),NSFontAttributeName, nil] forState:UIControlStateNormal];
     
@@ -91,7 +91,7 @@
             [self dismissViewControllerAnimated:YES completion:nil];
             break;
         case 1:
-            [self setBarButton:NO WithOriginalImage:@"cha_black" action:@selector(cancel)];
+            [self setBarButton:NO originalImage:[UIImage imageNamed:@"cha_black" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil]  action:@selector(cancel)];
             [_selectedCityArray removeLastObject];
             [self.tableView reloadData];
             [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
@@ -194,7 +194,7 @@
             }
             [self dismissViewControllerAnimated:YES completion:nil];
         }else{
-            [self setBarButton:NO WithOriginalImage:@"tap_back_black" action:@selector(cancel)];
+            [self setBarButton:NO originalImage:[UIImage imageNamed:@"tap_back_black" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil]  action:@selector(cancel)];
             [_selectedCityArray addObject:[self tableView:tableView cellForRowAtIndexPath:indexPath].textLabel.text];
             [tableView reloadData];
             [tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];

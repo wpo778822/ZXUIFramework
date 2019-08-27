@@ -47,9 +47,9 @@ typedef void (^Action)(void);
  */
 @property (nonatomic, copy) NSString *placeholderString;
 /**
- 占位图片名
+ 占位图片
  */
-@property (nonatomic, copy) NSString *imageName;
+@property (nonatomic, strong) UIImage *placeholderImage;
 
 /**
  回调按钮名
@@ -61,11 +61,11 @@ typedef void (^Action)(void);
 /**
  指定标题和图片
  @param title 提示标题
- @param iconName 占位图片
+ @param image 占位图片
  @param bnName 回调按钮名
  */
 + (instancetype)showCustomWithTitle:(NSString *)title
-                               icon:(NSString *)iconName
+                              image:(UIImage *)image
                            actionBn:(NSString *)bnName
                              action:(Action)action;
 

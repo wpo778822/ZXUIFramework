@@ -64,7 +64,7 @@
 /**
  默认占位图
  */
-@property (nonatomic, copy) NSString *placeHolderImageName;
+@property (nonatomic, strong) UIImage *placeHolderImage;
 
 /**
  代理

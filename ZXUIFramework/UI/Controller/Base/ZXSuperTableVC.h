@@ -18,10 +18,10 @@
  *  设置nav的左右按钮
  *
  *  @param isRight 右或者左边
- *  @param name    图片名字
+ *  @param originalImage    图片
  *  @param action  事件
  */
-- (void)setBarButton:(BOOL)isRight WithOriginalImage:(NSString *_Nullable)name action:(nullable SEL)action;
+- (void)setBarButton:(BOOL)isRight originalImage:(UIImage *_Nullable)originalImage action:(nullable SEL)action;
 
 /**
  *  返回
