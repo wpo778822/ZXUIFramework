@@ -93,8 +93,9 @@
     [self addSubview:showOptionButton];
     self.showOptionButton = showOptionButton;
     showOptionButton.adjustsImageWhenHighlighted = NO;
-    [showOptionButton setImage:UIImageWithName(@"zhankai") forState:UIControlStateNormal];
-    [showOptionButton setImage:UIImageWithName(@"shouqi") forState:UIControlStateSelected];
+    
+    [showOptionButton setImage:[UIImage imageNamed:@"zhankai" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+    [showOptionButton setImage:[UIImage imageNamed:@"shouqi" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
     [showOptionButton addTarget:self action:@selector(showOption) forControlEvents:UIControlEventTouchUpInside];
     [showOptionButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(displayLabel.mas_trailing).offset(5);

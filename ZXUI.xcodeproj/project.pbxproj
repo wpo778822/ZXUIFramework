@@ -934,18 +934,18 @@
 		047AD33F22FCFAFB00951EBC /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				047AD34B22FCFAFB00951EBC /* ZXControllerHelper.h */,
+				047AD34522FCFAFB00951EBC /* ZXControllerHelper.m */,
+				047AD34822FCFAFB00951EBC /* ZXFormHelper.h */,
+				047AD34422FCFAFB00951EBC /* ZXFormHelper.m */,
 				047AD34022FCFAFB00951EBC /* ZXHUDHelper.h */,
+				047AD34722FCFAFB00951EBC /* ZXHUDHelper.m */,
 				047AD34122FCFAFB00951EBC /* ZXTranscodingHelper.h */,
+				047AD34622FCFAFB00951EBC /* ZXTranscodingHelper.m */,
+				047AD34A22FCFAFB00951EBC /* ZXUtilHelper.h */,
 				047AD34222FCFAFB00951EBC /* ZXUtilHelper.m */,
 				047AD34322FCFAFB00951EBC /* ZXViewControllerPicker.h */,
-				047AD34422FCFAFB00951EBC /* ZXFormHelper.m */,
-				047AD34522FCFAFB00951EBC /* ZXControllerHelper.m */,
-				047AD34622FCFAFB00951EBC /* ZXTranscodingHelper.m */,
-				047AD34722FCFAFB00951EBC /* ZXHUDHelper.m */,
-				047AD34822FCFAFB00951EBC /* ZXFormHelper.h */,
 				047AD34922FCFAFB00951EBC /* ZXViewControllerPicker.m */,
-				047AD34A22FCFAFB00951EBC /* ZXUtilHelper.h */,
-				047AD34B22FCFAFB00951EBC /* ZXControllerHelper.h */,
 			);
 			path = Helper;
 			sourceTree = "<group>";

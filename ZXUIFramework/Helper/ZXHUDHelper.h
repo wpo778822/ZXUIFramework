@@ -9,13 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @interface ZXHUDHelper : NSObject
-//+ (void)alert:(NSString *)msg;
-//+ (void)alert:(NSString *)msg action:(void (^)(void))action;
-//+ (void)alert:(NSString *)msg cancel:(NSString *)cancel;
-//+ (void)alert:(NSString *)msg cancel:(NSString *)cancel action:(void (^)(void))action;
-//+ (void)alertTitle:(NSString *)title message:(NSString *)msg cancel:(NSString *)cancel;
-//+ (void)alertTitle:(NSString *)title message:(NSString *)msg cancel:(NSString *)cancel action:(void (^)(void))action;
-
 + (void)loading;
 + (void)loading:(NSString *)msg;
 + (void)loading:(NSString *)msg inView:(UIView *)view;

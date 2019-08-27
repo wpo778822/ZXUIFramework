@@ -23,12 +23,10 @@
     UIView *inView = view ? view : kWindow;
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:inView animated:YES];
     GCDMain(^{
-        if (!msg){
+        if (msg){
             hud.mode = MBProgressHUDModeIndeterminate;
             hud.label.text = msg;
         }
-        [inView addSubview:hud];
-        [hud showAnimated:YES];
         // 超时自动消失
         // [hud hide:YES afterDelay:kRequestTimeOutTime];
     });
@@ -56,8 +54,6 @@
     GCDMain(^{
         hud.mode = MBProgressHUDModeDeterminate;
         hud.progress = progress;
-        [inView addSubview:hud];
-        [hud showAnimated:YES];
         // 超时自动消失
         // [hud hide:YES afterDelay:kRequestTimeOutTime];
     });
@@ -78,10 +74,9 @@
         return;
     }
     GCDMain(^{
-        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:kWindow];
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:kWindow animated:YES];
         hud.mode = MBProgressHUDModeText;
         hud.label.text = msg;
-        [hud showAnimated:YES];
         [hud hideAnimated:YES afterDelay:seconds];
         GCDTime(seconds, ^{
             if (completion){

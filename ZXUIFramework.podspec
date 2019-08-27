@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZXUIFramework"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "组件库."
 
   # This description is used to generate tags and improve search results.
@@ -89,9 +89,9 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-  spec.source_files  = "ZXUIFramework/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.subspec 'ZXUIFramework' do |ss|
+    ss.source_files  = "ZXUIFramework/**/*.{h,m}"
+  end
 
   # spec.public_header_files = "Classes/**/*.h"
 

@@ -53,16 +53,16 @@
         [self addShadowWithColor:[UIColor colorUsingHexString:@"#999999"] radius:2.0 offset:CGSizeMake(0, 1) opacity:0.5 bounds:NO];
         switch (type) {
             case ZXNoticeTypeError:
-                [_imageView setImage:UIImageWithName(@"notice_bar_error")];
+                [_imageView setImage:[UIImage imageNamed:@"notice_bar_error" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil]];
                 break;
             case ZXNoticeTypeSuccess:
-                [_imageView setImage:UIImageWithName(@"notice_bar_success")];
+                [_imageView setImage:[UIImage imageNamed:@"notice_bar_success" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil]];
                 break;
             case ZXNoticeTypeInfo:
-                [_imageView setImage:UIImageWithName(@"notice_bar_info")];
+                [_imageView setImage:[UIImage imageNamed:@"notice_bar_info" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil]];
                 break;
             case ZXNoticeTypeFail:
-                [_imageView setImage:UIImageWithName(@"notice_bar_fail")];
+                [_imageView setImage:[UIImage imageNamed:@"notice_bar_fail" inBundle:[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] compatibleWithTraitCollection:nil]];
                 break;
             case ZXNoticeTypeMessage:
                 _label.font = UIFontWithSize(16.0);

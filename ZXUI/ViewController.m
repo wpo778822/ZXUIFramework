@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ZXGestureLockView.h"
 #import "ZXPhotoPicker.h"
+#import "ZXHUDHelper.h"
 @interface ViewController ()<ZXGestureLockViewDelegate,ZXPhotoPickerViewControllerDelegate>
 
 @end
@@ -26,7 +27,9 @@
 
 - (BOOL)didSelectedGestureLockView:(ZXGestureLockView *)gestureLockView pathNumberStr:(NSString *)pathNumberStr{
     NSLog(@"%@",pathNumberStr);
-    [self presentPhotoPickerWithPathNumberStr:pathNumberStr];
+//    [ZXHUDHelper tipMessage:pathNumberStr];
+    [ZXHUDHelper progress:.8];
+//    [self presentPhotoPickerWithPathNumberStr:pathNumberStr];
 //    [[CTMediator sharedInstance] CTMediator_showAlertWithMessage:@"casa" cancelAction:nil confirmAction:^(NSDictionary *info) {
 //        NSLog(@"%@",info);
 //    }];
