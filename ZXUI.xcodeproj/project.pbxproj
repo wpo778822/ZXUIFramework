@@ -40,7 +40,6 @@
 		047AD36622FCFAFC00951EBC /* ZXAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD29B22FCFAFB00951EBC /* ZXAlertViewStyleKit.m */; };
 		047AD36722FCFAFC00951EBC /* ZXAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD29C22FCFAFB00951EBC /* ZXAlertButton.m */; };
 		047AD36822FCFAFC00951EBC /* ZXartCityPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2A022FCFAFB00951EBC /* ZXartCityPickViewController.m */; };
-		047AD36922FCFAFC00951EBC /* ChinaCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2A122FCFAFB00951EBC /* ChinaCity.plist */; };
 		047AD36A22FCFAFC00951EBC /* ZXSuperTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2A422FCFAFB00951EBC /* ZXSuperTableVC.m */; };
 		047AD36B22FCFAFC00951EBC /* ZXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2A722FCFAFB00951EBC /* ZXNavigationController.m */; };
 		047AD36C22FCFAFC00951EBC /* ZXSuperCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD2A822FCFAFB00951EBC /* ZXSuperCollectionVC.m */; };
@@ -90,7 +89,6 @@
 		047AD39C22FCFAFC00951EBC /* ImageManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD32F22FCFAFB00951EBC /* ImageManger.m */; };
 		047AD39D22FCFAFC00951EBC /* ZXStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD33322FCFAFB00951EBC /* ZXStatusModel.m */; };
 		047AD39E22FCFAFC00951EBC /* ZXAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD33422FCFAFB00951EBC /* ZXAPIManager.m */; };
-		047AD39F22FCFAFC00951EBC /* NodeModelStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047AD33822FCFAFB00951EBC /* NodeModelStrings.plist */; };
 		047AD3A022FCFAFC00951EBC /* CreateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD33922FCFAFB00951EBC /* CreateModel.m */; };
 		047AD3A122FCFAFC00951EBC /* NodeModelStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD33A22FCFAFB00951EBC /* NodeModelStrings.m */; };
 		047AD3A222FCFAFC00951EBC /* PropertyInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 047AD33B22FCFAFB00951EBC /* PropertyInfomation.m */; };
@@ -166,7 +164,6 @@
 		047AD29C22FCFAFB00951EBC /* ZXAlertButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXAlertButton.m; sourceTree = "<group>"; };
 		047AD29D22FCFAFB00951EBC /* ZXTimerDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTimerDisplay.h; sourceTree = "<group>"; };
 		047AD2A022FCFAFB00951EBC /* ZXartCityPickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXartCityPickViewController.m; sourceTree = "<group>"; };
-		047AD2A122FCFAFB00951EBC /* ChinaCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChinaCity.plist; sourceTree = "<group>"; };
 		047AD2A222FCFAFB00951EBC /* ZXartCityPickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXartCityPickViewController.h; sourceTree = "<group>"; };
 		047AD2A422FCFAFB00951EBC /* ZXSuperTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSuperTableVC.m; sourceTree = "<group>"; };
 		047AD2A522FCFAFB00951EBC /* ZXSuperCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSuperCollectionVC.h; sourceTree = "<group>"; };
@@ -275,7 +272,6 @@
 		047AD33422FCFAFB00951EBC /* ZXAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXAPIManager.m; sourceTree = "<group>"; };
 		047AD33622FCFAFB00951EBC /* PropertyInfomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyInfomation.h; sourceTree = "<group>"; };
 		047AD33722FCFAFB00951EBC /* NodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeModel.h; sourceTree = "<group>"; };
-		047AD33822FCFAFB00951EBC /* NodeModelStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NodeModelStrings.plist; sourceTree = "<group>"; };
 		047AD33922FCFAFB00951EBC /* CreateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateModel.m; sourceTree = "<group>"; };
 		047AD33A22FCFAFB00951EBC /* NodeModelStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeModelStrings.m; sourceTree = "<group>"; };
 		047AD33B22FCFAFB00951EBC /* PropertyInfomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyInfomation.m; sourceTree = "<group>"; };
@@ -352,12 +348,7 @@
 		047AD26022FCFAFB00951EBC /* ZXUIFramework */ = {
 			isa = PBXGroup;
 			children = (
-				047AD26122FCFAFB00951EBC /* UI */,
-				047AD30622FCFAFB00951EBC /* Category */,
-				047AD31D22FCFAFB00951EBC /* ZXHeader.h */,
-				047AD31E22FCFAFB00951EBC /* ZXMacro.h */,
-				047AD31F22FCFAFB00951EBC /* Manager */,
-				047AD33F22FCFAFB00951EBC /* Helper */,
+				048D28B92314FD92000122FC /* ZXUI */,
 				047AD34C22FCFAFB00951EBC /* ZXResource.xcassets */,
 			);
 			path = ZXUIFramework;
@@ -513,7 +504,6 @@
 			isa = PBXGroup;
 			children = (
 				047AD2A022FCFAFB00951EBC /* ZXartCityPickViewController.m */,
-				047AD2A122FCFAFB00951EBC /* ChinaCity.plist */,
 				047AD2A222FCFAFB00951EBC /* ZXartCityPickViewController.h */,
 			);
 			path = RegionPicker;
@@ -918,15 +908,14 @@
 		047AD33522FCFAFB00951EBC /* CreateModel */ = {
 			isa = PBXGroup;
 			children = (
-				047AD33622FCFAFB00951EBC /* PropertyInfomation.h */,
-				047AD33722FCFAFB00951EBC /* NodeModel.h */,
-				047AD33822FCFAFB00951EBC /* NodeModelStrings.plist */,
-				047AD33922FCFAFB00951EBC /* CreateModel.m */,
-				047AD33A22FCFAFB00951EBC /* NodeModelStrings.m */,
-				047AD33B22FCFAFB00951EBC /* PropertyInfomation.m */,
-				047AD33C22FCFAFB00951EBC /* NodeModel.m */,
 				047AD33D22FCFAFB00951EBC /* CreateModel.h */,
+				047AD33922FCFAFB00951EBC /* CreateModel.m */,
+				047AD33722FCFAFB00951EBC /* NodeModel.h */,
+				047AD33C22FCFAFB00951EBC /* NodeModel.m */,
 				047AD33E22FCFAFB00951EBC /* NodeModelStrings.h */,
+				047AD33A22FCFAFB00951EBC /* NodeModelStrings.m */,
+				047AD33622FCFAFB00951EBC /* PropertyInfomation.h */,
+				047AD33B22FCFAFB00951EBC /* PropertyInfomation.m */,
 			);
 			path = CreateModel;
 			sourceTree = "<group>";
@@ -948,6 +937,19 @@
 				047AD34922FCFAFB00951EBC /* ZXViewControllerPicker.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		048D28B92314FD92000122FC /* ZXUI */ = {
+			isa = PBXGroup;
+			children = (
+				047AD26122FCFAFB00951EBC /* UI */,
+				047AD30622FCFAFB00951EBC /* Category */,
+				047AD31D22FCFAFB00951EBC /* ZXHeader.h */,
+				047AD31E22FCFAFB00951EBC /* ZXMacro.h */,
+				047AD31F22FCFAFB00951EBC /* Manager */,
+				047AD33F22FCFAFB00951EBC /* Helper */,
+			);
+			path = ZXUI;
 			sourceTree = "<group>";
 		};
 		25FB134DA97D9299AA867601 /* Pods */ = {
@@ -1029,14 +1031,12 @@
 			files = (
 				047AD35B22FCFAFC00951EBC /* ZXPhotoCell.xib in Resources */,
 				044062ED216DEDD6004D4D8D /* LaunchScreen.storyboard in Resources */,
-				047AD36922FCFAFC00951EBC /* ChinaCity.plist in Resources */,
 				047AD35C22FCFAFC00951EBC /* ZXAlbumCell.xib in Resources */,
 				047AD35A22FCFAFC00951EBC /* ZXCameraCell.xib in Resources */,
 				044062EA216DEDD6004D4D8D /* Assets.xcassets in Resources */,
 				047AD3AA22FCFAFC00951EBC /* ZXResource.xcassets in Resources */,
 				044062E8216DEDD5004D4D8D /* Main.storyboard in Resources */,
 				047AD35522FCFAFC00951EBC /* ZXSinglePhotoViewController.xib in Resources */,
-				047AD39F22FCFAFC00951EBC /* NodeModelStrings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

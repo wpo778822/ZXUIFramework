@@ -39,7 +39,7 @@
  *  @return 字典
  */
 - (NSDictionary *)accessModelPlist {
-    NSString     *path = [[NSBundle mainBundle] pathForResource:@"NodeModelStrings" ofType:@"plist"];
+    NSString     *path = [[NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:@"/ZXResource.bundle"]] pathForResource:@"NodeModelStrings" ofType:@"plist"];
     NSDictionary *data = [[NSDictionary alloc] initWithContentsOfFile:path];
     return data;
 }
