@@ -405,13 +405,13 @@
 		047AD26922FCFAFB00951EBC /* PhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
-				047AD26A22FCFAFB00951EBC /* UIViewController+ZXPhotoHelper.m */,
-				047AD26C22FCFAFB00951EBC /* ZXPhotoPickerTheme.m */,
 				047AD26D22FCFAFB00951EBC /* Controller */,
 				047AD27722FCFAFB00951EBC /* UIViewController+ZXPhotoHelper.h */,
-				047AD27822FCFAFB00951EBC /* ZXPhotoPicker.h */,
+				047AD26A22FCFAFB00951EBC /* UIViewController+ZXPhotoHelper.m */,
 				047AD27922FCFAFB00951EBC /* View */,
+				047AD27822FCFAFB00951EBC /* ZXPhotoPicker.h */,
 				047AD28322FCFAFB00951EBC /* ZXPhotoPickerTheme.h */,
+				047AD26C22FCFAFB00951EBC /* ZXPhotoPickerTheme.m */,
 			);
 			path = PhotoPicker;
 			sourceTree = "<group>";
@@ -419,15 +419,15 @@
 		047AD26D22FCFAFB00951EBC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				047AD26E22FCFAFB00951EBC /* ZXPhotoNavigationController.m */,
-				047AD26F22FCFAFB00951EBC /* ZXSinglePhotoViewController.m */,
 				047AD27022FCFAFB00951EBC /* ZXAlbumPickerViewController.h */,
-				047AD27122FCFAFB00951EBC /* ZXPhotoPickerViewController.m */,
-				047AD27222FCFAFB00951EBC /* ZXPhotoNavigationController.h */,
-				047AD27322FCFAFB00951EBC /* ZXSinglePhotoViewController.xib */,
 				047AD27422FCFAFB00951EBC /* ZXAlbumPickerViewController.m */,
-				047AD27522FCFAFB00951EBC /* ZXSinglePhotoViewController.h */,
+				047AD27222FCFAFB00951EBC /* ZXPhotoNavigationController.h */,
+				047AD26E22FCFAFB00951EBC /* ZXPhotoNavigationController.m */,
 				047AD27622FCFAFB00951EBC /* ZXPhotoPickerViewController.h */,
+				047AD27122FCFAFB00951EBC /* ZXPhotoPickerViewController.m */,
+				047AD27522FCFAFB00951EBC /* ZXSinglePhotoViewController.h */,
+				047AD26F22FCFAFB00951EBC /* ZXSinglePhotoViewController.m */,
+				047AD27322FCFAFB00951EBC /* ZXSinglePhotoViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -469,15 +469,15 @@
 		047AD28B22FCFAFB00951EBC /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				047AD28C22FCFAFB00951EBC /* ZXImageScrollViewController.h */,
-				047AD28D22FCFAFB00951EBC /* ZXPhotoBrowserViewController.h */,
+				047AD29322FCFAFB00951EBC /* ZXImageScrollView.h */,
 				047AD28E22FCFAFB00951EBC /* ZXImageScrollView.m */,
 				047AD28F22FCFAFB00951EBC /* ZXImageScrollView+internal.h */,
-				047AD29022FCFAFB00951EBC /* ZXPresentAnimatedTransitioningController.m */,
-				047AD29122FCFAFB00951EBC /* ZXPhotoBrowserViewController.m */,
+				047AD28C22FCFAFB00951EBC /* ZXImageScrollViewController.h */,
 				047AD29222FCFAFB00951EBC /* ZXImageScrollViewController.m */,
-				047AD29322FCFAFB00951EBC /* ZXImageScrollView.h */,
+				047AD28D22FCFAFB00951EBC /* ZXPhotoBrowserViewController.h */,
+				047AD29122FCFAFB00951EBC /* ZXPhotoBrowserViewController.m */,
 				047AD29422FCFAFB00951EBC /* ZXPresentAnimatedTransitioningController.h */,
+				047AD29022FCFAFB00951EBC /* ZXPresentAnimatedTransitioningController.m */,
 			);
 			path = PhotoBrowser;
 			sourceTree = "<group>";

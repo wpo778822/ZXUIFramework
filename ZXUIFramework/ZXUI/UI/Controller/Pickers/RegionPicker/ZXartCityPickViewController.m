@@ -29,6 +29,7 @@
 - (instancetype)initWithSelectedCity:(NSArray *)array delegate:(id<ZXartCityPickViewControllerDelegate>)delegate{
     self = [super init];
     if (self) {
+        self.modalPresentationStyle = UIModalPresentationFullScreen;
         WeakSelf(weakSelf)
         [Geomanager fetchCurrrentLocationWithoutReGeocodeCompletionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
             if (error){

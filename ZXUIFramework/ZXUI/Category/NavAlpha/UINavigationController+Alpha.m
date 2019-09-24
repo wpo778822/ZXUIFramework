@@ -13,30 +13,20 @@
 @implementation UINavigationController (Alpha)
 // 设置导航栏背景透明度
 - (void)setNeedsNavigationBackground:(CGFloat)alpha {
-    if (@available(iOS 11.0, *)) {
-        if ([self.navigationBar subviews].count == 0 ) return;
-        // 导航栏背景透明度设置
-        UIView *barBackgroundView = [[self.navigationBar subviews] objectAtIndex:0];// _UIBarBackground
-        if ([barBackgroundView subviews].count != 2) return;
-        UIImageView *backgroundImageView = [[barBackgroundView subviews] objectAtIndex:0];// UIImageView
-        if (self.navigationBar.isTranslucent && [backgroundImageView isKindOfClass:[UIImageView class]]) {
-            if (backgroundImageView != nil && backgroundImageView.image != nil) {
-                barBackgroundView.alpha = alpha;
-            } else {
-                UIView *backgroundEffectView = [[barBackgroundView subviews] objectAtIndex:1];// UIVisualEffectView
-                if (backgroundEffectView != nil) {
-                    backgroundEffectView.alpha = alpha;
-                }
+    [self.navigationBar.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (@available(iOS 10.0, *)) {
+            if ([obj isKindOfClass:NSClassFromString(@"_UIBarBackground")]) {
+             dispatch_async(dispatch_get_main_queue(), ^{
+                    obj.alpha = alpha;
+                });
             }
-        } else {
-            barBackgroundView.alpha = alpha;
+        }else if ([obj isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                obj.alpha = alpha;
+            });
         }
-        
-        // 对导航栏下面那条线做处理
-        self.navigationBar.clipsToBounds = alpha == 0.0;
-    } else {
-        if(self.navigationBar.subviews[0].alpha != alpha) self.navigationBar.subviews[0].alpha = alpha;
-    }
+    }];
+    self.navigationBar.clipsToBounds = alpha == 0.0;
 }
 
 + (void)initialize {

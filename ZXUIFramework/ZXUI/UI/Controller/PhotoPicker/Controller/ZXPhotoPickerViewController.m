@@ -40,6 +40,7 @@ static const CGFloat ZXPhotoFetchScaleResizingRatio = 0.75;
 
 - (instancetype)init{
     self.selectedPhotos = [NSMutableArray array];
+    self.modalPresentationStyle = UIModalPresentationFullScreen;
     self.numberOfPhotoToSelect = 1;
     self.shouldReturnImageForSingleSelection = YES;
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
