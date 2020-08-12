@@ -131,15 +131,14 @@
 			</array>
 			<key>邢台</key>
 			<array>
-				<string>桥东区</string>
-				<string>桥西区</string>
-				<string>邢台县</string>
+				<string>襄都区</string>
+				<string>信都区</string>
+                <string>任泽区</string>
+                <string>南和区</string>
 				<string>临城县</string>
 				<string>内丘县</string>
 				<string>柏乡县</string>
 				<string>隆尧县</string>
-				<string>任县</string>
-				<string>南和县</string>
 				<string>宁晋县</string>
 				<string>巨鹿县</string>
 				<string>新河县</string>
@@ -332,12 +331,12 @@
 			<key>晋中</key>
 			<array>
 				<string>榆次区</string>
+                <string>太谷区</string>
 				<string>榆社县</string>
 				<string>左权县</string>
 				<string>和顺县</string>
 				<string>昔阳县</string>
 				<string>寿阳县</string>
-				<string>太谷县</string>
 				<string>祁县</string>
 				<string>平遥县</string>
 				<string>灵石县</string>
@@ -720,6 +719,7 @@
 				<string>农安县</string>
 				<string>榆树市</string>
 				<string>德惠市</string>
+                <string>公主岭市</string>
 			</array>
 			<key>吉林</key>
 			<array>
@@ -739,7 +739,6 @@
 				<string>铁东区</string>
 				<string>梨树县</string>
 				<string>伊通满族自治县</string>
-				<string>公主岭市</string>
 				<string>双辽市</string>
 			</array>
 			<key>辽源</key>
@@ -888,21 +887,14 @@
 			</array>
 			<key>伊春</key>
 			<array>
-				<string>伊春区</string>
-				<string>南岔区</string>
+				<string>伊美区</string>
 				<string>友好区</string>
-				<string>西林区</string>
-				<string>翠峦区</string>
-				<string>新青区</string>
-				<string>美溪区</string>
-				<string>金山屯区</string>
-				<string>五营区</string>
-				<string>乌马河区</string>
-				<string>汤旺河区</string>
-				<string>带岭区</string>
-				<string>乌伊岭区</string>
-				<string>红星区</string>
-				<string>上甘岭区</string>
+				<string>金林区</string>
+				<string>乌翠区</string>
+                <string>南岔县</string>
+				<string>丰林县</string>
+				<string>汤旺县</string>
+				<string>大箐山县</string>
 				<string>嘉荫县</string>
 				<string>铁力市</string>
 			</array>
@@ -942,7 +934,7 @@
 			<key>黑河</key>
 			<array>
 				<string>爱辉区</string>
-				<string>嫩江县</string>
+				<string>嫩江市</string>
 				<string>逊克县</string>
 				<string>孙吴县</string>
 				<string>北安市</string>
@@ -1057,12 +1049,11 @@
 			<key>南通</key>
 			<array>
 				<string>崇川区</string>
-				<string>港闸区</string>
 				<string>通州区</string>
+                <string>海门区</string>
 				<string>海安市</string>
 				<string>启东市</string>
 				<string>如皋市</string>
-				<string>海门市</string>
 				<string>如东县</string>
 			</array>
 			<key>连云港</key>
@@ -1174,6 +1165,7 @@
 				<string>永嘉县</string>
 				<string>平阳县</string>
 				<string>苍南县</string>
+                <string>龙港市</string>
 				<string>文成县</string>
 				<string>泰顺县</string>
 				<string>瑞安市</string>
@@ -1280,11 +1272,10 @@
 				<string>镜湖区</string>
 				<string>弋江区</string>
 				<string>鸠江区</string>
-				<string>三山区</string>
-				<string>芜湖县</string>
-				<string>繁昌县</string>
+				<string>湾沚区</string>
+				<string>繁昌区</string>
 				<string>南陵县</string>
-				<string>无为县</string>
+				<string>无为市</string>
 			</array>
 			<key>蚌埠</key>
 			<array>
@@ -1410,7 +1401,7 @@
 			<array>
 				<string>宣州区</string>
 				<string>郎溪县</string>
-				<string>广德县</string>
+				<string>广德市</string>
 				<string>泾县</string>
 				<string>绩溪县</string>
 				<string>旌德县</string>
@@ -1543,7 +1534,7 @@
 				<string>东湖区</string>
 				<string>西湖区</string>
 				<string>青云谱区</string>
-				<string>湾里区</string>
+				<string>红谷滩区</string>
 				<string>青山湖区</string>
 				<string>新建区</string>
 				<string>南昌县</string>
@@ -1602,7 +1593,7 @@
 				<string>上犹县</string>
 				<string>崇义县</string>
 				<string>安远县</string>
-				<string>龙南县</string>
+				<string>龙南市</string>
 				<string>定南县</string>
 				<string>全南县</string>
 				<string>宁都县</string>
@@ -1660,7 +1651,7 @@
 			<array>
 				<string>信州区</string>
 				<string>广丰区</string>
-				<string>上饶县</string>
+				<string>广信区</string>
 				<string>玉山县</string>
 				<string>铅山县</string>
 				<string>横峰县</string>
@@ -1738,11 +1729,10 @@
 				<string>福山区</string>
 				<string>牟平区</string>
 				<string>莱山区</string>
-				<string>长岛县</string>
+				<string>蓬莱区</string>
 				<string>龙口市</string>
 				<string>莱阳市</string>
 				<string>莱州市</string>
-				<string>蓬莱市</string>
 				<string>招远市</string>
 				<string>栖霞市</string>
 				<string>海阳市</string>
@@ -1831,9 +1821,9 @@
 			<key>聊城</key>
 			<array>
 				<string>东昌府区</string>
+                <string>茌平区</string>
 				<string>阳谷县</string>
 				<string>莘县</string>
-				<string>茌平县</string>
 				<string>东阿县</string>
 				<string>冠县</string>
 				<string>高唐县</string>
@@ -1955,7 +1945,7 @@
 				<string>原阳县</string>
 				<string>延津县</string>
 				<string>封丘县</string>
-				<string>长垣县</string>
+				<string>长垣市</string>
 				<string>卫辉市</string>
 				<string>辉县市</string>
 			</array>
@@ -2051,12 +2041,12 @@
 			<key>周口</key>
 			<array>
 				<string>川汇区</string>
+                <string>淮阳区</string>
 				<string>扶沟县</string>
 				<string>西华县</string>
 				<string>商水县</string>
 				<string>沈丘县</string>
 				<string>郸城县</string>
-				<string>淮阳县</string>
 				<string>太康县</string>
 				<string>鹿邑县</string>
 				<string>项城市</string>
@@ -2174,7 +2164,7 @@
 				<string>沙市区</string>
 				<string>荆州区</string>
 				<string>公安县</string>
-				<string>监利县</string>
+				<string>监利市</string>
 				<string>江陵县</string>
 				<string>石首市</string>
 				<string>洪湖市</string>
@@ -2284,7 +2274,7 @@
 				<string>双清区</string>
 				<string>大祥区</string>
 				<string>北塔区</string>
-				<string>邵东县</string>
+				<string>邵东市</string>
 				<string>新邵县</string>
 				<string>邵阳县</string>
 				<string>隆回县</string>
@@ -2691,9 +2681,9 @@
 			<key>百色</key>
 			<array>
 				<string>右江区</string>
-				<string>田阳县</string>
+				<string>田阳区</string>
 				<string>田东县</string>
-				<string>平果县</string>
+				<string>平果市</string>
 				<string>德保县</string>
 				<string>那坡县</string>
 				<string>凌云县</string>
@@ -2773,9 +2763,8 @@
 			</array>
 			<key>三沙</key>
 			<array>
-				<string>西沙群岛</string>
-				<string>南沙群岛</string>
-				<string>中沙群岛的岛礁及其海域</string>
+				<string>西沙区</string>
+				<string>南沙区</string>
 			</array>
 			<key>儋州</key>
 			<array/>
@@ -2871,7 +2860,7 @@
 				<string>郫都区</string>
 				<string>大邑县</string>
 				<string>蒲江县</string>
-				<string>新津县</string>
+				<string>新津区</string>
 				<string>都江堰市</string>
 				<string>彭州市</string>
 				<string>邛崃市</string>
@@ -2940,7 +2929,7 @@
 				<string>船山区</string>
 				<string>安居区</string>
 				<string>蓬溪县</string>
-				<string>射洪县</string>
+				<string>射洪市</string>
 				<string>大英县</string>
 			</array>
 			<key>内江</key>
@@ -3122,7 +3111,7 @@
 			<array>
 				<string>钟山区</string>
 				<string>六枝特区</string>
-				<string>水城县</string>
+				<string>水城区</string>
 				<string>盘州市</string>
 			</array>
 			<key>遵义</key>
@@ -3258,7 +3247,7 @@
 			<array>
 				<string>红塔区</string>
 				<string>江川区</string>
-				<string>澄江县</string>
+				<string>澄江市</string>
 				<string>通海县</string>
 				<string>华宁县</string>
 				<string>易门县</string>
@@ -3581,7 +3570,7 @@
 				<string>宝塔区</string>
 				<string>延长县</string>
 				<string>延川县</string>
-				<string>子长县</string>
+				<string>子长市</string>
 				<string>安塞县</string>
 				<string>志丹县</string>
 				<string>吴旗县</string>
@@ -3787,8 +3776,8 @@
 				<string>城中区</string>
 				<string>城西区</string>
 				<string>城北区</string>
+                <string>湟中区</string>
 				<string>大通回族土族自治县</string>
-				<string>湟中县</string>
 				<string>湟源县</string>
 			</array>
 			<key>海东</key>
@@ -3809,7 +3798,7 @@
 			</array>
 			<key>黄南</key>
 			<array>
-				<string>同仁县</string>
+				<string>同仁市</string>
 				<string>尖扎县</string>
 				<string>泽库县</string>
 				<string>河南蒙古族自治县</string>
@@ -3909,6 +3898,8 @@
 			<array/>
 			<key>双河</key>
 			<array/>
+            <key>胡杨河</key>
+            <array/>
 			<key>乌鲁木齐</key>
 			<array>
 				<string>天山区</string>
@@ -3972,7 +3963,7 @@
 			<array>
 				<string>阿克苏市</string>
 				<string>温宿县</string>
-				<string>库车县</string>
+				<string>库车市</string>
 				<string>沙雅县</string>
 				<string>新和县</string>
 				<string>拜城县</string>
